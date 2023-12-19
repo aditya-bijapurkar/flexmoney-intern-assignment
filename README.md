@@ -8,7 +8,16 @@ This is a full-stack (MERN) website which registers members to a yoga class whic
 -  Node + Express -> backend server (hosted on https://www.cyclic.sh)
 -  React + vite -> frontend client (hosted on https://www.netlify.com/)
 
-- REST API -> for cross origin comminication.
+- REST API -> for cross origin communication.
+
+## Dataflow and Database model 
+
+![Alt text](https://github.com/aditya-bijapurkar/flexmoney-intern-assignment/blob/main/data.png?raw=true)
+
+
+### node-schedule (to change batch after the month is over)
+- All the batches are updated in the 'nextBatch' field in the mongodb collection
+- using nnode-schedule module (scheduleJob function) on the 1st day of every month the 'batch' field gets 'nextBatch' field's value and 'nextBatch' becomes null.
 
 
 ## API Calls
@@ -30,10 +39,6 @@ This is a full-stack (MERN) website which registers members to a yoga class whic
 ```http
   POST /update
 ```
-
-### node-schedule (to change batch after the month is over)
-- All the batches are updated in the 'nextBatch' field in the mongodb collection
-- using nnode-schedule module (scheduleJob function) on the 1st day of every month the 'batch' field gets 'nextBatch' field's value and 'nextBatch' becomes null.
 
 ## Assumptions
 - 'CompletePayment()' mock function always runs and succeeds after each new registration.
