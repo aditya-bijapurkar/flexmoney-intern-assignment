@@ -1,0 +1,39 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.input-span {
+  color: white;
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+
+.nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(70, 77, 77);
+  padding: 3px;
+  border-radius: 10px;
+  text-decoration: none;
+}
