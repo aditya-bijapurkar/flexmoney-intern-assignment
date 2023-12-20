@@ -20,9 +20,16 @@ const Success = () => {
     const res = await updateBatch(data);
     console.log(res);
     if (res.same) {
+      setUpdatedBatch(null);
       alert(`You are already in the same batch: ${newBatch}`);
     } else setUpdatedBatch(`Your batch from next month will be: ${newBatch}`);
   };
+
+  function getDate() {
+    const date = member.date.substr(0, 10);
+
+    return `${date.substr(8, 2)}-${date.substr(5, 2)}-${date.substr(0, 4)}`;
+  }
 
   function validity() {
     const date = member.date.substr(0, 10);
@@ -50,11 +57,14 @@ const Success = () => {
       }}
     >
       <h1>Welcome, {member.name}</h1>
-      <h2>Subscription is valid till: {validity()}</h2>
+      <h2>Subscription is valid from: {getDate()}</h2>
+      <h3>Next payment date: {validity()}</h3>
+      <br />
+      <br />
       <h3>Current Batch: {member.batch}</h3>
       <div
         style={{
-          marginTop: "300px",
+          marginTop: "250px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
