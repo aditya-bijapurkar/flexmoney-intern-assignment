@@ -30,6 +30,7 @@ This is a full-stack (MERN) website which registers members to a yoga class whic
 
 
 ## API Calls
+#### update body before calling
 
 ##### Register a new member
 
