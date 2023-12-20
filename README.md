@@ -3,6 +3,7 @@
 ### All the backend and frontend source code is available in 'Node server backend' and 'React client frontend' folders respectively present in this repository!
 
 #### hosted website: https://flexmoney-intern-assignment.netlify.app/
+#### server: https://determined-flip-flops-colt.cyclic.app/
 
 This is a full-stack (MERN) website which registers members to a yoga class which has a per-month-basis subscription.
 
