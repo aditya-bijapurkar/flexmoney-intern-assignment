@@ -7,6 +7,11 @@
 
 This is a full-stack (MERN) website which registers members to a yoga class which has a per-month-basis subscription.
 
+### Steps: 
+1) Register as a new member
+2) You will be redirected to the sign-in page
+3) Sign in to your account
+
 ### Tech stack:
 - MongoDB -> NoSQL database
 -  Node + Express -> backend server (hosted on https://www.cyclic.sh)
